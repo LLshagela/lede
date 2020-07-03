@@ -22,7 +22,7 @@ jobs:
 
   build_openwrt:
 
-    name: X86-64 openwrt 7.3
+    name: X86-64openwrt7.3
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
 
