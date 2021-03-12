@@ -22,7 +22,7 @@ jobs:
 
   build_openwrt:
 
-    name: OpenWrt-7.4
+    name: OpenWrt-2021.3.12
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
 
@@ -60,8 +60,8 @@ jobs:
           cd package
           mkdir openwrt-packages
           cd openwrt-packages
-          git clone https://github.com/LLshagela/luci-app-passwall.git
-          git clone https://github.com/LLshagela/luci-app-openclash.git
+          git clone https://github.com/ylqjgm/luci-app-passwall.git
+          git clone https://github.com/yuos-bit/luci-app-openclash.git
           git clone https://github.com/LLshagela/luci-app-ssr-plus.git
       
       - name: Update feeds
